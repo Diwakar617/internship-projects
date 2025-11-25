@@ -1,0 +1,20 @@
+import random
+
+comp_choice=random.randint(1,100)
+
+while True:
+    try:
+        guess=int(input('guess a number between 1 to 100 :'))
+
+        if guess < comp_choice:
+            print("enter high number than your number")
+
+        elif guess > comp_choice:
+            print("enter low number than your number") 
+
+        else:
+            print("you have done it")   
+
+
+    except ValueError:
+        print('print  a valid number')
