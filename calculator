@@ -1,0 +1,26 @@
+import math
+
+while True:
+    num1=input("enter a number :")
+    operation=input("choose operation (+,-,*,/): ")
+    num2=input("enter second number :")
+
+    num1=float(num1)
+    num2=float(num2)
+
+    if operation == "+":
+        result = num1 + num2
+
+    elif operation == "-":
+        result= num1- num2
+
+    elif operation == '*':
+        result = num1 *num2
+
+    elif operation == '/':
+        result = num1 / num2
+
+    else:
+        print("DUMB enter number : ")
+
+    print(f"{num1} {operation} {num2} = {result}")
